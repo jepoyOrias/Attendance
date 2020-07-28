@@ -1,0 +1,6 @@
+@media print
+{
+  #printData th{
+    color: #cccccc;
+  }
+}

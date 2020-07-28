@@ -1,0 +1,143 @@
+/*!
+ * ;Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -16rem;
+  -webkit-transition: margin .25s ease-in;
+  -moz-transition: margin .25s ease-in;
+  -o-transition: margin .25s ease-in;
+  transition: margin .25s ease-in;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  background: linear-gradient(285deg, #144b79 50%, #333333 50%);
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 150px;
+  color: #fff;
+}
+
+#sidebar-wrapper{
+  color: black;
+}
+
+#sidebar-wrapper .list-group {
+  width: 250px;
+  line-height: 35px;
+  border-top: 1px solid #e0e4e8;
+}
+
+#sidebar-wrapper .list-group a{
+  padding: 15px;
+  width: 250px;
+  border-bottom: 1px solid #e0e4e8;
+  text-decoration: none;
+  color: #333333;
+}
+
+#sidebar-wrapper .list-group .active{
+  color: #fff;
+  background: gray;
+  padding-left: 25px;
+}
+
+#sidebar-wrapper .list-group a:hover{
+  transition: all 0.3s;
+  color: #fff;
+  background: gray;
+  padding-left: 25px;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+  font-size: 0.9rem;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -16rem;
+  }
+}
+
+#tname{
+  visibility: hidden;
+}
+
+@media print{
+  *{
+    align-items: flex-start;
+    width: 50vh;
+  }
+
+  #sidebar-wrapper{
+    display: none;
+  }
+
+  .card-header{
+    display: none;
+  }
+
+  .btn{
+    display: none;
+  }
+
+  #printBtn{
+    display: none;
+  }
+
+  .card{
+    border: 0;
+  }
+
+  .table{
+    align-content: left;
+    justify-content: left;
+  }
+
+  .table,thead,tbody,tr,td{
+    border: 2px solid black;
+   
+  }
+
+  #tname{
+    visibility: visible;
+  }
+
+  h1,h3{
+    display: none;
+  }
+  
+  hr,h6,p{
+    display: none;
+  }
+  .input-group{
+    display: none;
+  }
+}
+
